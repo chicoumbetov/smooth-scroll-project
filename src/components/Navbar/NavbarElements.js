@@ -59,14 +59,14 @@ export const MobileIcon = styled.div`
 `
 
 export const NavMenu = styled.ul`
-display: flex;
-align-items: center;
-list-style: none;
-text-align: center;
-margin-right: -22px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    margin-right: -22px;
 
-@media screen and (max-width: 760px) {
-    display: none;
+    @media screen and (max-width: 760px) {
+        display: none;
 }
 `
 export const NavItem = styled.li`
@@ -79,6 +79,7 @@ export const NavLinks = styled(LinkS)`
     align-items: center;
     text-decoration: none;
     padding: 0 1rem;
+    height: 100%;
     cursor: pointer;
 
     &.active {
