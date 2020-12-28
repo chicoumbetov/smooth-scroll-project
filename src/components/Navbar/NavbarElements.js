@@ -32,7 +32,7 @@ export const NavbarContainer = styled.div`
 `
 
 export const NavLogo = styled(LinkR)`
-color: #fff;
+    color: #fff;
     justify-self: flex-start;
     cursor: pointer;
     font-size: 1.5rem;
@@ -51,7 +51,7 @@ export const MobileIcon = styled.div`
         position: absolute;
         top: 0;
         right: 0;
-        trasnform: translate(-100%, 60%);
+        transform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
         color: #fff;
