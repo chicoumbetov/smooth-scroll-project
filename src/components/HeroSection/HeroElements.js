@@ -91,6 +91,27 @@ export const HeroBtnWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+    justify-content: flex-start;
+    border-radius: 50px;
+    width: 50%;
+    white-space: nowrap;
+    padding: 10px 22px;
+    
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    background: #01bf71;
+    color: #010606;
+    
+    text-decoration: none;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        background: #fff;
+    }
 `
 
 export const ArrowForward = styled(MdArrowForward)`

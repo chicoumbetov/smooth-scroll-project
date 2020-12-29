@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 
+//background: #0d0d0d;
 export const InfoContainer = styled.div`
     color: #fff;
-    background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')}
+    background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#010606')}
 
     @media screen and (max-width: 768px) {
         padding: 100px 0;
@@ -26,10 +27,10 @@ export const InfoRow = styled.div`
     grid-auto-columns: minmax(auto, 1fr);
     align-items: center;
     grid-template-areas: 'col1 col2';
-    /*${({imgStart}) => imgStart ? `'col2 col1'` : `'col1 col2'`}*/
+    /*${({ imgStart }) => imgStart ? `'col2 col1'` : `'col1 col2'`}*/
 
     @media screen and (max-width: 768px) {
-        grid-template-areas: ${({ imgStart }) => imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`}
+        grid-template-areas: ${({ imgStart }) => imgStart ? `'col1 col2'` : `'col2 col1'`}
     }
 `
 
@@ -82,30 +83,30 @@ export const Subtitle = styled.p`
     font-size: 18px;
     line-height: 24px;
     color: #010606;
-    /*${({darkText}) => (darkText ? '#010606' : '#fff')}*/
+    /*${({ darkText }) => (darkText ? '#010606' : '#fff')}*/
 `
 
 export const BtnWrap = styled.div`
     display: flex;
     justify-content: flex-start;
     border-radius: 50px;
-    width: 35%;
-/*    align-item: center;*/
-    background: #01bf71;
+    width: 50%;
     white-space: nowrap;
     padding: 10px 22px;
-    color: #010606;
+    
     font-size: 16px;
     outline: none;
     border: none;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
+
+    background: #01bf71;
+    color: #010606;
+    
     text-decoration: none;
 
     &:hover {
         transition: all 0.2s ease-in-out;
         background: #fff;
-        color: #010606;
     }
 `
 
