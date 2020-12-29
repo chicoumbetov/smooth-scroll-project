@@ -12,12 +12,12 @@ import {
 //1:15:00
 const HeroSection = () => {
 
-    const [ hover , setHover] = useState(false)
+    const [hover, setHover] = useState(false)
 
     const onHover = () => {
         setHover(!hover)
     }
- 
+
     return (
         <HeroContainer id="home">
             <HeroBg>
@@ -38,7 +38,12 @@ const HeroSection = () => {
                         onMouseLeave={onHover}
                         primary='true'
                         dark='true'
-                    >  
+                        smooth={true}
+                        duration={500}
+                        spy={true} exact='true'
+                        offset={-80}
+                        activeClass="active"
+                    >
                         Get started {hover ? <ArrowForward /> : <ArrowRight />}
                     </Button>
 

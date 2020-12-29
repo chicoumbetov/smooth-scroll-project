@@ -32,7 +32,7 @@ const Navbar = ({ toggle }) => {
 
     return (
         <>
-            <IconContext.Provider value={{ color: 'yellow' }}>
+            <IconContext.Provider value={{ color: 'black' }}>
                 <Nav scrollNav={scrollNav}>
                     <NavbarContainer>
                         <NavLogo to="/" onClick={toggleHome}>Logo</NavLogo>
